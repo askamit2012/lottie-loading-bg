@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    /* background-image: radial-gradient(circle at center center, rgba(33,33,33,0),rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(56,56,56) 0px, rgb(56,56,56) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));  */
+    font-family: monospace;
+}
+
+body {
+    scroll-snap-type: y proximity;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    /* scroll-snap-type: proximity; */
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    scroll-snap-align: center;
+    
+}
+
+.main-anim {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.loaded {
+    display: block;
+}
+
+.sec {
+    scroll-snap-align: start;
+}
+
+.anim1 {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sec1 h1,p {
+    position: relative;
+    z-index: 10;
+}
+
+.anim2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: invert(1);
+}
+
+.sec2 h1,p {
+    position: relative;
+    z-index: 10;
+}
+
+.anim3 {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* filter: hue-rotate(); */
+    backdrop-filter: invert();
+}
+
+.sec3 h1,p {
+    position: relative;
+    z-index: 10;
+}
+
+.anim4 {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* filter: invert(1); */
+    backdrop-filter: invert();
+}
+
+.sec4 h1,p {
+    position: relative;
+    z-index: 10;
+}
+
+.anim5 {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* filter: hue-rotate(); */
+    backdrop-filter: invert();
+}
+
+.sec5 h1,p {
+    position: relative;
+    z-index: 10;
+}
